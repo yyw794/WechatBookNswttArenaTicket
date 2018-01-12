@@ -1,0 +1,2 @@
+# WechatBookNswttArenaTicket
+用于自动订微信的南山文体通的场地卷，需要输入微信访问南山文体通的JSESSIONID
