@@ -1,6 +1,11 @@
 # WechatBookNswttArenaTicket
 用于自动订微信的南山文体通的场地卷，需要输入微信访问南山文体通的JSESSIONID
 
+执行(需要安装python的requests库）：
+```bash
+python wechat_auto_book.py $YOUR_JSESSIONID
+```
+
 我的使用：
 在linux系统中，采用cron在工作日的下午2点自动执行这个程序
 ```cron
