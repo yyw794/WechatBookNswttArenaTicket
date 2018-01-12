@@ -4,10 +4,10 @@
 我的使用：
 在linux系统中，采用cron在工作日的下午2点自动执行这个程序
 ```cron
-0 14 * * 1,2,3,4,5 python /home/mania/Codes/badminton/wechat_badminton_auto_book.py $MY_JSESSIONID>> /home/mania/Codes/badminton/log
+0 14 * * 1,2,3,4,5 python /home/mania/Codes/badminton/wechat_auto_book.py $MY_JSESSIONID>> /home/mania/Codes/badminton/log
 ```
 
-###关键是获取JSESSIONID
+### 关键是获取JSESSIONID
 我采用mitmproxy获取。
 linux中安装mitmproxy后，
 ```bash
