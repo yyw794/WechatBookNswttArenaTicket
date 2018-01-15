@@ -71,14 +71,6 @@ def book_target_and_get_payment_id(target_id):
 	'''
 	return ret["data"]
 
-def result_inform(content):
-	data = {
-		"send_type": "wechat",
-		"to": "xn080520",
-		"content": content
-	}
-	requests.post("https://ops-amc.niudingfeng.com/send", json=data).json()
-
 def pay_target(payment_id):
 	url = "http://www.nswtt.org.cn/v2/pay/pubAccountPay.do"
 	form = {
@@ -95,7 +87,6 @@ def pay_target(payment_id):
 	}
 
 	'''
-	result_inform(ret["msg"])
 	return ret
 
 def input_jsessionid():
